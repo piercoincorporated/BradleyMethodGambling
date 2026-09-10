@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pixel Luck — Play Money Arcade</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top"><span class="brand-mark">◆</span> PIXEL LUCK</a>
+    <div class="wallet"><span>Demo balance</span><strong id="balance">1,000</strong><button id="bonusBtn" class="small-btn">+ 250 bonus</button></div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">VIRTUAL CREDITS · NO CASH VALUE</p>
+        <h1>Play the odds.<br /><span>Keep it pixel.</span></h1>
+        <p class="hero-copy">A fictional arcade for experimenting with chance. Every game uses demo credits only—no deposits, withdrawals, or real-world prizes.</p>
+        <a class="primary-btn" href="#games">Browse games <span>↓</span></a>
+      </div>
+      <div class="hero-art"><div class="orb orb-one"></div><div class="orb orb-two"></div><div class="pixel-star">✦</div><div class="hero-card">LUCK<br /><b>LAB</b></div></div>
+    </section>
+
+    <section id="games" class="section">
+      <div class="section-heading"><div><p class="eyebrow">THE ARCADE</p><h2>Choose your game</h2></div><span class="status"><i></i> Demo mode active</span></div>
+      <div class="game-grid">
+        <article class="game-card featured" data-game="plinko"><div class="card-icon pink">✣</div><div><h3>Plinko</h3><p>Drop a chip. Let gravity decide.</p></div><button class="play-btn">Play</button></article>
+        <article class="game-card" data-game="rocket"><div class="card-icon orange">↗</div><div><h3>Rocket</h3><p>Cash out before it blasts off.</p></div><button class="play-btn">Play</button></article>
+        <article class="game-card" data-game="cases"><div class="card-icon blue">▣</div><div><h3>Cases</h3><p>Open fictional blocky cosmetics.</p></div><button class="play-btn">Play</button></article>
+        <article class="game-card" data-game="mines"><div class="card-icon purple">✹</div><div><h3>Mines</h3><p>Reveal gems. Avoid the mines.</p></div><button class="play-btn">Play</button></article>
+        <article class="game-card" data-game="chicken"><div class="card-icon yellow">♨</div><div><h3>Chicken Run</h3><p>Cross the road, one step at a time.</p></div><button class="play-btn">Play</button></article>
+        <article class="game-card" data-game="tower"><div class="card-icon green">▥</div><div><h3>Tower</h3><p>Climb floors and pick a safe door.</p></div><button class="play-btn">Play</button></article>
+      </div>
+    </section>
+
+    <section class="how"><p class="eyebrow">HOW IT WORKS</p><h2>Just pixels, no pressure.</h2><div class="steps"><div><b>01</b><h3>Get demo credits</h3><p>Start with a free balance. The bonus button is unlimited for testing.</p></div><div><b>02</b><h3>Pick a game</h3><p>Try your luck across six simple arcade experiments.</p></div><div><b>03</b><h3>Have fun safely</h3><p>Credits have no cash value and reset whenever you refresh.</p></div></div></section>
+  </main>
+
+  <div class="modal hidden" id="gameModal"><div class="modal-panel"><button class="close" id="closeModal">×</button><div id="gameContent"></div></div></div>
+  <footer>PIXEL LUCK © 2025 · A fictional play-money demo · Not affiliated with Roblox or any other platform.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
